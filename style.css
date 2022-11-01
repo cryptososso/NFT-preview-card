@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(217, 54%, 11%);
+   font-size: 18;
+   font-family: 'Outfit', sans-serif;
+}
+
+main{
+  width: 450px;
+  background: hsl(216, 50%, 16%);
+  padding: 1em 1.8em;
+  border: 1px solid #000;
+  border-radius: 15px;
+  line-height: 1.2;
+}
+
+.images{
+   background-repeat: no-repeat;
+   border-radius: 15px;
+   position: relative;
+   cursor: pointer;
+}
+
+.images .icon-equilibrium{
+   width: 100%;
+   border-radius: 15px;
+   position: relative;
+   z-index: 1;
+   transition: 0.8s ease-in-out;
+}
+
+.images .icon-view{
+   position: absolute;
+   top: 45%;
+   left: 40%;
+   width: 70px;
+}
+
+.images .icon-equilibrium:hover{
+   filter: blur(2.63px) brightness(2.62);
+   -webkit-filter: blur(2.63px) brightness(2.62);
+   -moz-filter: blur(2.63px) brightness(2.62);
+   z-index: 0;
+   opacity: 0.8;
+}
+
+main h2{
+   color: #fff;
+   font-size: 1.8em;
+   padding: 10px 0;
+   margin: 10px 0;
+   cursor: pointer;
+   transition: 0.8s ease-in-out;
+}
+
+main h2:hover{
+   color: hsl(178, 100%, 50%);
+}
+
+main p{
+   font-size: 1.2em;
+   color: hsl(215, 51%, 70%);
+   padding: 10px 0;
+   margin-bottom: 15px;
+}
+
+main .info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+main .price{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+main .price .icon-eth{
+   margin-right: 8px;
+   width: 12px;
+}
+
+main .price span{
+   color: hsl(178, 100%, 50%);
+}
+
+main .clock{
+   display: flex;
+   align-items: center;
+}
+
+main .clock .icon-clock{
+   margin-right: 8px;
+   width: 20px;
+}
+
+
+main .clock small{
+   color: hsl(215, 51%, 70%);
+}
+
+
+main .creator{
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+
+main .creator .img-avatar{
+   width: 60px;
+   height: 60px;
+   border: 3px solid hsl(215, 51%, 70%);;
+   border-radius: 30px;
+   margin-right: 20px;
+}
+
+main .creator p{
+   margin-top: 15px;
+}
+
+main .creator span{
+   transition: 0.8s ease-in-out;
+}
+
+
+main .creator span:hover{
+   cursor: pointer;
+   color: hsl(178, 100%, 50%);;
+}
+
+.attribution { 
+   font-size: 0.9em; 
+   text-align: center; 
+   margin-top: 15px;
+   color: #fff;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 760px){
+   main{
+      width: 350px;
+    }
+
+    main h2{
+      font-size: 1.3em;
+   }
+
+    main p{
+   font-size: 1em;
+   }
+
+  main .price .icon-eth{
+   width: 10px;
+  }
+
+  main .price span{
+   font-size: 0.9em;
+}
+
+main .creator .img-avatar{
+   width: 50px;
+   height: 50px;
+} 
+   
+main .creator p{
+  font-size: 0.9em;
+
+}
+
+.attribution { 
+   font-size: 0.7em; 
+   text-align: center; 
+   margin-top: 15px;
+   color: #fff;
+}
+
+
+}
